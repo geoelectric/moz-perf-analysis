@@ -1,6 +1,6 @@
 # Tools for analyzing Mozilla make test-perf results
 
-## Pre-requisites
+## Prerequisites
 
 pip install -r requirements.txt
 
