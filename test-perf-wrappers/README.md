@@ -16,13 +16,13 @@ structure is expected.
 
 ### Structure
 
-TOP_DIR (scripts go here)
-|
-|- results (empty, will receive results)
-|- BASE (a base build for flashing device)
-|- BRANCH-b2g-distro-BUILD (a nightly b2g build)
-|- BRANCH-b2g-distro-BUILD (a nightly b2g build)
-|- gaia (a checkout of mozilla-b2g/gaia)
+ TOP_DIR (scripts go here)
+ |
+ |- results (empty, will receive results)
+ |- BASE (a base build for flashing device)
+ |- BRANCH-b2g-distro-BUILD (a nightly b2g build)
+ |- BRANCH-b2g-distro-BUILD (a nightly b2g build)
+ |- gaia (a checkout of mozilla-b2g/gaia)
 
 ### BASE 
 
