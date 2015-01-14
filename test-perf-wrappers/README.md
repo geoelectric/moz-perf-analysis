@@ -18,17 +18,23 @@ structure is expected.
 
     TOP_DIR (scripts go here)
     |
-    |- results (empty, will receive results)
     |- BASE (a base build for flashing device)
+    |
     |- BRANCH-b2g-distro-BUILD (a nightly b2g build)
+    |
     |- BRANCH-b2g-distro-BUILD (a nightly b2g build)
+    |
     |- gaia (a checkout of mozilla-b2g/gaia)
+    |
+    |- results (empty, will receive results)
 
 ### BASE 
 
 BASE is a base build for Flame. This directory should have the img files
 and flash.sh script at top level. Note that existing flash.sh scripts end 
 in `adb logcat` and never exit. They must be modified to exit at the end.
+
+This is used by prep.bash.
 
 ### BRANCH-b2g-distro-BUILD
 
@@ -40,11 +46,20 @@ An example of BRANCH-b2g-distro-BUILD would be:
 In this case a timestamp is used, but it is arbitrary.
 
 This directory should contain the unzipped contents of a nightly build,
-including the flash.sh script and sources.xml at top levle.
+including the flash.sh script and sources.xml at top level.
+
+This is used by prep.bash.
 
 ### gaia
 
 The gaia directory should be an up to date pull of mozilla-b2g/gaia.
+
+This is used by prep.bash and run.bash.
+
+### results
+
+results is only expected by go.bash. It's given to run.bash as part of the results 
+prefix, but if you execute run.bash directly any prefix can be supplied.
 
 ## Scripts
 
