@@ -27,10 +27,13 @@ name2\*.json. You may have multiple files for each, and they will be combined pr
 to charting.
 
 Because the names are reused for chart labels, as written, it's best if they don't
-include directories and refer to files in the current directory when executed.
+include directories and refer to files in the current directory when executed. If
+the names include parts separated by dashes (ex: 2.0-2014-10-31-1.json) only the
+first part (2.0) will be used for chart labels.
 
-Both can also be imported in iPython and used interactively.
-make_comparison_charts.compare() is particularly useful with matplotlib inline.
+crunch_perf_results.py and make_comparison_charts.py can also be imported in iPython 
+and used interactively. make_comparison_charts.compare() is particularly useful with 
+matplotlib inline.
 
 ## Notes
 
