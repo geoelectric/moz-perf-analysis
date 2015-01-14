@@ -5,8 +5,12 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 import json
+import sys
 
-PREFIX = '2.0-20140924123153-results'
+if len(sys.argv) > 1:
+    PREFIX = sys.argv[1]
+else:
+    PREFIX = '2.1-20140929114702-results'
 
 for i in range(1, 17):
     j = json.loads(open('%s-%d.json' % (PREFIX, i)).read())

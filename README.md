@@ -16,18 +16,21 @@ if you're on OS X. It'll be on your path, or in your virtualenv's bin folder.
 
 ## Usage
 
-crunch_perf_results.py creates summary datasets by combining runs. Run 'python
-crunch_perf_results.py --help' for details.
+crunch_perf_results.py creates summary datasets by combining runs. Run `python
+crunch_perf_results.py --help` for details.
 
-Run 'python compare_results.py' to save graphs to png.
+Run `python make_comparison_charts.py name1 name2` to compare result sets and save
+charts to png. This will process two sets of json results, name1\*.json and 
+name2\*.json. You may have multiple files for each, and they will be combined prior
+to charting.
 
 Both can also be imported in iPython and used interactively.
-compare_results.compare() is particularly useful with matplotlib inline.
+make_comparison_charts.compare() is particularly useful with matplotlib inline.
 
 ## Notes
 
-These are currently not polished for general use, particularly compare_results,
-and require things like editing the scripts to change the logs parsed.
+These are currently not polished for general use.
 
-They are being generalized and will be updated.
+To see how to generate results to use with this, look in the test-perf-wrappers 
+directory for example driver scripts for make test-perf.
 
