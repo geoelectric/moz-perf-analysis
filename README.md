@@ -2,11 +2,11 @@
 
 ## Prerequisites
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 If you want to use iPython to visualize, also:
 
-pip install -r requirements-ipython.txt
+`pip install -r requirements-ipython.txt`
 
 This sets up iPython for use with qtconsole for inline matplotlib. You'll need
 to make sure Qt is also installed via your local package manager.
