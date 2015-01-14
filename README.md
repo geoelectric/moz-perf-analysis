@@ -20,9 +20,14 @@ crunch_perf_results.py creates summary datasets by combining runs. Run `python
 crunch_perf_results.py --help` for details.
 
 Run `python make_comparison_charts.py name1 name2` to compare result sets and save
-charts to png. This will process two sets of json results, name1\*.json and 
+charts to png. 
+
+This will process two sets of json results, name1\*.json and 
 name2\*.json. You may have multiple files for each, and they will be combined prior
 to charting.
+
+Because the names are reused for chart labels, as written, it's best if they don't
+include directories and refer to files in the current directory when executed.
 
 Both can also be imported in iPython and used interactively.
 make_comparison_charts.compare() is particularly useful with matplotlib inline.
